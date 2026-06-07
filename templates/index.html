@@ -1,0 +1,207 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Employee Promotion:-</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h2>Employee Promotion:-</h2>-->
+<!--<form method="post">-->
+
+<!--    <label>Select Education</label>-->
+<!--    <br>-->
+<!--    <select name="inp1">-->
+<!--        <option value="">&#45;&#45;Choose One&#45;&#45;</option>-->
+<!--        <option value="Graduate">Graduate</option>-->
+<!--        <option value="Postgraduate">Postgraduate</option>-->
+<!--        <option value="Diploma">Diploma</option>-->
+<!--    </select>-->
+<!--    <br><br>-->
+
+<!--    <label>Enter ExperienceYears</label>-->
+<!--    <br>-->
+<!--    <input type="number" name="inp2">-->
+<!--    <br><br>-->
+
+<!--    <label>Select Performance</label>-->
+<!--    <br>-->
+<!--    <select name="inp3">-->
+<!--        <option>&#45;&#45;Choose One&#45;&#45;</option>-->
+<!--        <option value="Average">Average</option>-->
+<!--        <option value="Good">Good</option>-->
+<!--        <option value="Poor">Poor</option>-->
+<!--        <option value="Excellent">Excellent</option>-->
+<!--    </select>-->
+<!--    <br><br>-->
+
+<!--    <label>Enter Salary</label>-->
+<!--    <br>-->
+<!--    <input type="number" name="inp4">-->
+<!--    <br><br>-->
+
+<!--    <label>Select Department</label>-->
+<!--    <br>-->
+<!--    <select name="inp5">-->
+<!--        <option>&#45;&#45;Choose One&#45;&#45;</option>-->
+<!--        <option value="HR">HR</option>-->
+<!--        <option value="IT">IT</option>-->
+<!--        <option value="Sales">Sales</option>-->
+<!--        <option value="Support">Support</option>-->
+<!--        <option value="Operations">Operations</option>-->
+<!--        <option value="Finance">Finance</option>-->
+
+<!--    </select>-->
+<!--    <br><br>-->
+<!--    <input type="submit">-->
+
+
+
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Promotion</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#667eea,#764ba2);
+            padding:20px;
+        }
+
+        .container{
+            width:100%;
+            max-width:500px;
+            background:rgba(255,255,255,0.15);
+            backdrop-filter:blur(15px);
+            border:1px solid rgba(255,255,255,0.2);
+            border-radius:20px;
+            padding:35px;
+            box-shadow:0 8px 32px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            text-align:center;
+            color:white;
+            margin-bottom:25px;
+            font-size:28px;
+        }
+
+        .form-group{
+            margin-bottom:18px;
+        }
+
+        label{
+            display:block;
+            color:white;
+            margin-bottom:8px;
+            font-weight:500;
+        }
+
+        input,
+        select{
+            width:100%;
+            padding:12px 15px;
+            border:none;
+            outline:none;
+            border-radius:10px;
+            font-size:15px;
+            background:rgba(255,255,255,0.9);
+        }
+
+        input:focus,
+        select:focus{
+            box-shadow:0 0 10px rgba(255,255,255,0.7);
+        }
+
+        input[type="submit"]{
+            width:100%;
+            background:#ffffff;
+            color:#5b4bc4;
+            font-weight:bold;
+            font-size:16px;
+            cursor:pointer;
+            transition:0.3s;
+            padding:14px;
+            border-radius:10px;
+        }
+
+        input[type="submit"]:hover{
+            transform:translateY(-2px);
+            box-shadow:0 8px 20px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Employee Promotion Prediction</h2>
+
+    <form method="post">
+
+        <div class="form-group">
+            <label>Select Education</label>
+            <select name="inp1">
+                <option value="">--Choose One--</option>
+                <option value="Graduate">Graduate</option>
+                <option value="Postgraduate">Postgraduate</option>
+                <option value="Diploma">Diploma</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Enter Experience Years</label>
+            <input type="number" name="inp2">
+        </div>
+
+        <div class="form-group">
+            <label>Select Performance</label>
+            <select name="inp3">
+                <option>--Choose One--</option>
+                <option value="Average">Average</option>
+                <option value="Good">Good</option>
+                <option value="Poor">Poor</option>
+                <option value="Excellent">Excellent</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Enter Salary</label>
+            <input type="number" name="inp4">
+        </div>
+
+        <div class="form-group">
+            <label>Select Department</label>
+            <select name="inp5">
+                <option>--Choose One--</option>
+                <option value="HR">HR</option>
+                <option value="IT">IT</option>
+                <option value="Sales">Sales</option>
+                <option value="Support">Support</option>
+                <option value="Operations">Operations</option>
+                <option value="Finance">Finance</option>
+            </select>
+        </div>
+
+        <input type="submit" value="Predict Promotion">
+
+    </form>
+</div>
+
+</body>
+</html>

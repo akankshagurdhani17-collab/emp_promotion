@@ -1,0 +1,101 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Result</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--{% if pred=='Yes'%}-->
+<!--    <p>{{pred}} promotion will be given to the employee</p>-->
+<!--{% else %}-->
+<!--    <p>{{pred}} promotion will not be given to the employee</p>-->
+<!--{% endif %}-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promotion Result</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#667eea,#764ba2);
+            padding:20px;
+        }
+
+        .result-card{
+            width:100%;
+            max-width:600px;
+            background:rgba(255,255,255,0.15);
+            backdrop-filter:blur(15px);
+            border:1px solid rgba(255,255,255,0.2);
+            border-radius:20px;
+            padding:40px;
+            text-align:center;
+            box-shadow:0 8px 32px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            color:white;
+            margin-bottom:25px;
+            font-size:32px;
+        }
+
+        .success{
+            font-size:22px;
+            font-weight:600;
+            color:#ffffff;
+            line-height:1.6;
+        }
+
+        .icon{
+            font-size:60px;
+            margin-bottom:20px;
+        }
+
+        .prediction{
+            font-size:28px;
+            font-weight:bold;
+            display:block;
+            margin-bottom:10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="result-card">
+
+{% if pred=='Yes'%}
+    <div class="icon">🎉</div>
+    <h1>Promotion Approved</h1>
+    <p class="success">
+        <span class="prediction">{{pred}}</span>
+        Promotion will be given to the employee.
+    </p>
+{% else %}
+    <div class="icon">📋</div>
+    <h1>Promotion Not Approved</h1>
+    <p class="success">
+        <span class="prediction">{{pred}}</span>
+        Promotion will not be given to the employee.
+    </p>
+{% endif %}
+
+</div>
+
+</body>
+</html>
